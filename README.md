@@ -80,12 +80,4 @@ kubectl port-forward $(kubectl get pods --selector=istio=ingressgateway -n istio
 ```
 127.0.0.1	deploy-test.example.org
 ```
-* Open your web browser and open the url with `http://deploy-test.example.org:8080`
-* You can monitor automatic blue-green deployment by the following command:
-```
-# You can define new version for this release to replace "xx.xx"
-$ ./autoDeployBlueOrGreen.sh xx.xx
-```
-* Monitor the website changes
-![All traffic to blue](images/ph0bn-7s7gs.gif)
-![All traffic to green](images/ylcou-ev0rk.gif)
+* Open your web browser ot Terminal and open the url with `http://deploy-test.example.org:8080  or curl http://deploy-test.example.org:8080 `
